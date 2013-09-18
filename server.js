@@ -1,12 +1,14 @@
 /**
  * Dependencies.
  */
-var net = require('net');
+var net = require('net'),
+    fs = require('fs');
 
-var server = net.createServer();
+var file = fs.createWriteStream(__dirname + '/logs.json'),
+    server = net.createServer();
 
 server.on('connection', function(socket) {
-    console.log('I can haz a connection');
+    socket.pipe(file);
 });
 
 server.listen(4000, function() {
