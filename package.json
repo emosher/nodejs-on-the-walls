@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
-  "author": "Eric Mosher",
-  "license": "BSD"
+  "repository": "https://github.com/emosher/nodejs-on-the-walls",
+  "author": "Eric Mosher"
 }
