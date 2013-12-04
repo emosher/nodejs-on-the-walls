@@ -1,4 +1,5 @@
 # Netbeans
 nbproject/
 
+node_modules/
 logs.json
